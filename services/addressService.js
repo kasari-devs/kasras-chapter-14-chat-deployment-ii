@@ -1,5 +1,5 @@
 
-import { sql } from "../database.js";
+import { sql } from "./database/database.js";
 
 const create = async (userName, message) => {
     await sql`INSERT INTO messages (sender, message) VALUES (${userName}, ${message});`;

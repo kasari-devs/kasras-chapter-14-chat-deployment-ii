@@ -2,6 +2,7 @@
 import { serve } from "./deps.js";
 import { configure, renderFile } from "https://deno.land/x/eta@v2.0.0/mod.ts";
 import * as addressService from "./services/addressService.js";
+import { sql } from "./database/database.js";
 
 configure({
     views: `${Deno.cwd()}/views/`,

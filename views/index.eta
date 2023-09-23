@@ -1,0 +1,16 @@
+
+<h1>Addresses</h1>
+
+<form method="POST">
+  user name: <input type="text" name="sender" /><br/>
+  message: <input type="text" name="message"/><br/>
+  <input type="submit" value="Submit!" />
+</form>
+<ul>
+<% it.messages.forEach((msg) => { %>
+  <li>
+    <%= msg.sender %>: <%= msg.message %>
+  </li>
+<% }); %>
+</ul>
+
